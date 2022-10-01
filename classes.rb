@@ -45,3 +45,25 @@ student1 = Student.new("Curtis", "Engineering", 3.2)
 student2 = Student.new("Tram", "Business", 3.7)
 puts student1.has_honors
 puts student2.has_honors
+
+# Inheritance
+class Chef
+  def make_chicken
+    puts "Fresh Chicken"
+  end
+  def yell
+    puts "Hurry up!"
+  end
+end
+
+chef = Chef.new()
+chef.make_chicken
+
+class ItalianChef < Chef
+  def yell
+    puts "Mama Mia!"
+  end
+end
+
+italian_chef = ItalianChef.new()
+italian_chef.yell
